@@ -17,6 +17,11 @@ return {
                 javascriptreact = { "prettier" },
                 typescriptreact = { "prettier" },
             },
+            formatters = {
+                prettier = {
+                    prepend_args = { "--single-quote", "true" },
+                },
+            },
             format_on_save = {
                 timeout_ms = 5000,
                 lsp_format = "fallback",
